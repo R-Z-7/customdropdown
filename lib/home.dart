@@ -11,8 +11,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final List<String> _size = ["Small", "Medium", "Large"];
-  String? seletedItem = 'Small';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +20,7 @@ class _HomePageState extends State<HomePage> {
 
       body: Center(
         child: CustomDropDown(
-          Items: ["1", "2"],
+          Items: ["1", "2", "3", "4"],
           hintName: 'List',
         ),
         // child: DropdownButton<String>(
